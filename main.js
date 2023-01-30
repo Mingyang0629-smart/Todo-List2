@@ -13,7 +13,7 @@ if (Notification.permission == "granted") {
 button.addEventListener("click", () => {
 
     if (!input.value) return alert("Please add something to the task")
-   
+    input.value = ""
     const task = document.createElement("p")
     
     task.innerText = input.value
